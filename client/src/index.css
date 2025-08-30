@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-system-bg text-white antialiased;
+}
+
+.system-panel {
+  @apply bg-system-panel/80 backdrop-blur-md border border-white/5 rounded-xl shadow-system;
+}
+
+.system-accent {
+  @apply text-system-accent;
+}
+
+.system-button {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg bg-system-accent text-black font-semibold hover:brightness-110 transition;
+}
